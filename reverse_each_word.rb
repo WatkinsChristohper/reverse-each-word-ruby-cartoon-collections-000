@@ -5,9 +5,9 @@ sentence2 = ["Hi","again,","just","making","sure","it's","reversed!"]
 
 
   
-def reverse_each_word(sentence)
-   sentence1.select {|word| word.reversed}
-   puts word.reversed
-end
-
-sentence1
+ef reverse_each_word(sentence)
+   reversed = sentence.split(" ").collect do |word|
+   word.reverse
+ end
+   reversed.join(" ")
+ end 
